@@ -7,8 +7,9 @@ import SendIcon from "@mui/icons-material/Send";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import EditIcon from "@mui/icons-material/Edit";
 import { loadDraft, clearDraft } from "@/lib/formStore";
+import { FormData } from "@/lib/schemas";
 
-function ReviewRow({ label, value }) {
+function ReviewRow({ label, value }: { label: string; value?: string }) {
   return (
     <Stack direction={{ xs: "column", sm: "row" }} spacing={1} sx={{ py: 1.5, borderBottom: "1px solid #f0f0f0" }}>
       <Typography variant="body2" color="text.secondary" sx={{ minWidth: 180, fontWeight: 500 }}>{label}</Typography>
@@ -19,7 +20,7 @@ function ReviewRow({ label, value }) {
 
 export default function ReviewPage() {
   const router = useRouter();
-  const [data, setData] = useState({});
+  const [data, setData] = useState<Partial<FormData>>({});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   useEffect(() => { setData(loadDraft()); }, []);

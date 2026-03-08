@@ -27,7 +27,7 @@ export default function Step2() {
     const sub = watch((v) => saveDraft(v as Step2Data));
     return () => sub.unsubscribe();
   }, [watch]);
-  const onSubmit = (data) => { saveDraft(data); router.push("/grievance/step3"); };
+  const onSubmit = (data: Step2Data) => { saveDraft(data); router.push("/grievance/step3"); };
   return (
     <Box sx={{ p: 4 }}>
       <Typography variant="h5" fontWeight={700} mb={0.5}>Grievance Details</Typography>
