@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Grievance Portal
 
-## Getting Started
+This is a frontend assignment I built using Next.js. It's a multi-step form where employees can raise workplace grievances.
 
-First, run the development server:
+## About the project
 
-```bash
+I built this as part of an interview assignment. The idea was to create a form that feels smooth to use — you fill in your details step by step, and your progress is saved automatically so you don't lose anything if you accidentally refresh the page.
+
+At the end there's a review screen where you can look over everything before submitting. Once submitted you get a reference number for your grievance.
+
+## Tech stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Material UI
+- React Hook Form
+- Zod for validation
+
+## Running the project
+
+git clone https://github.com/Freeze-22/grievance-portal-frontend.git
+cd grievance-portal-frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Live link
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+https://grievance-portal-fe.vercel.app
