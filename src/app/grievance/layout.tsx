@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const steps = ["Personal Info", "Grievance Details", "Supporting Info", "Review & Submit"];
 
-function getActiveStep(pathname) {
+function getActiveStep(pathname: string) {
   if (pathname.includes("step1")) return 0;
   if (pathname.includes("step2")) return 1;
   if (pathname.includes("step3")) return 2;
