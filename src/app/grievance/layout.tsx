@@ -14,7 +14,7 @@ function getActiveStep(pathname: string) {
   return 0;
 }
 
-export default function GrievanceLayout({ children }) {
+export default function GrievanceLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const activeStep = getActiveStep(pathname);
 
